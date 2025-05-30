@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSG - Paris Saint-Germain</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Styles généraux */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #004170, #DA291C);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #004170;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #DA291C;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            margin: 30px 0;
+        }
+
+        .content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #004170;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #DA291C;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #004170, #DA291C);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .social-links {
+            margin: 15px 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Paris_Saint-Germain_Logo.svg/1200px-Paris_Saint-Germain_Logo.svg.png" alt="Logo PSG" class="logo">
+            <h1>Paris Saint-Germain</h1>
+            <p>Le club de football de la capitale</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Effectif</a></li>
+                <li><a href="#">Calendrier</a></li>
+                <li><a href="#">Billetterie</a></li>
+                <li><a href="#">Boutique</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <main class="content">
+                <h2>Bienvenue sur le site du PSG</h2>
+                <img src="https://www.psg.fr/media/1344/parc-des-princes-match-psg.jpg" alt="Parc des Princes" class="hero-image">
+                <p>Le Paris Saint-Germain est un club de football français basé à Paris. Fondé en 1970, le club évolue en Ligue 1 et dispute ses matchs à domicile au Parc des Princes.</p>
+                <p>Le PSG est l'un des clubs les plus titrés de France avec de nombreux championnats, coupes et trophées européens à son palmarès. Le club est connu pour ses joueurs emblématiques comme Zlatan Ibrahimović, Ronaldinho, et plus récemment Kylian Mbappé.</p>
+                
+                <h2>Dernières actualités</h2>
+                <p><strong>Victoire contre Marseille</strong> - Le PSG s'est imposé 3-1 lors du Classique face à l'OM avec un doublé de Dembele.</p>
+                <p><strong>Nouveau recrutement</strong> - Le club a annoncé la signature d'un nouveau défenseur international pour renforcer l'effectif.</p>
+                <p><strong>Projet stade</strong> - Des rumeurs circulent sur un possible nouveau stade pour le club dans les années à venir.</p>
+                
+                <h2>Galerie photos</h2>
+                <div class="gallery">
+                    <img src="https://www.psg.fr/media/1342/psg-equipe-2023.jpg" alt="Equipe PSG 2023">
+                    <img src="https://www.psg.fr/media/1340/psg-entrainement.jpg" alt="Entrainement PSG">
+                    <img src="https://www.psg.fr/media/1338/psg-trophee.jpg" alt="Trophée PSG">
+                    <img src="https://www.psg.fr/media/1336/psg-supporters.jpg" alt="Supporters PSG">
+                    <img src="https://www.psg.fr/media/1334/psg-mbappe.jpg" alt="Kylian Mbappé">
+                    <img src="https://www.psg.fr/media/1332/psg-maillot.jpg" alt="Nouveau maillot PSG">
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Prochains matches</h2>
+                <p><strong>PSG vs Lyon</strong><br>12/05/2023 - 21:00</p>
+                <p><strong>Lille vs PSG</strong><br>20/05/2023 - 17:00</p>
+                <p><strong>PSG vs Monaco</strong><br>27/05/2023 - 21:00</p>
+                
+                <h2>Classement Ligue 1</h2>
+                <p>1. PSG - 75 pts</p>
+                <p>2. Marseille - 65 pts</p>
+                <p>3. Lens - 63 pts</p>
+                <p>4. Monaco - 58 pts</p>
+                <p>5. Rennes - 56 pts</p>
+                
+                <h2>Boutique</h2>
+                <p>Découvrez les nouveaux maillots et produits officiels du PSG dans notre boutique en ligne.</p>
+                <button style="background-color: #004170; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Visiter la boutique</button>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Paris Saint-Germain - Tous droits réservés</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook">f</i></a>
+                <a href="#"><i class="fab fa-twitter">t</i></a>
+                <a href="#"><i class="fab fa-instagram">i</i></a>
+                <a href="#"><i class="fab fa-youtube">y</i></a>
+            </div>
+            <p>Parc des Princes, 24 Rue du Commandant Guilbaud, 75016 Paris</p>
+        </div>
+    </footer>
+</body>
+</html>
